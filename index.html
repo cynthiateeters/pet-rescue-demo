@@ -16,12 +16,30 @@
         align-items: center;
         min-height: 100vh;
         background-color: #f0f0f0;
+        padding: max(1rem, 1vw);
       }
 
-      h1 {
+      .title {
         grid-column: 1/2;
         display: block;
         margin-inline: auto;
+        width: fit-content;
+      }
+
+      .title h2 {
+        text-align: center;
+      }
+
+      h1,
+      h2 {
+        display: block;
+        font-family: serif;
+        color: hsl(330, 100%, 70%);
+      }
+
+      h1:before,
+      h2:before {
+        content: "--";
       }
 
       .gallery {
@@ -54,11 +72,20 @@
         object-fit: contain;
         transition: transform 0.4s ease;
       }
+
+      @media screen and (width <= 800px) {
+        .gallery {
+          grid-template-columns: 1fr;
+        }
+      }
     </style>
   </head>
 
   <body>
-    <h1>Demo Pet Rescue Organization Site</h1>
+    <div class="title">
+      <h1>Demo Pet Rescue Organization Site</h1>
+      <h2>Showing different pages</h2>
+    </div>
     <div class="gallery">
       <div class="gallery-item">
         <h2>Home Page</h2>
