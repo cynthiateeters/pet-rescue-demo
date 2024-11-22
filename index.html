@@ -1,88 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Grid Gallery</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background-color: #f0f0f0;
-    }
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="dog-placeholder.svg" type="image/svg+xml">
+    <title>Image Grid Gallery</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+      }
 
-    h1 {
-      grid-column: 1/2;
-      display: block;
-      margin-inline: auto;
-    }
+      h1 {
+        grid-column: 1/2;
+        display: block;
+        margin-inline: auto;
+      }
 
-    .gallery {
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-      width: 90%;
-      max-width: 1200px;
-      margin: 20px auto;
-    }
+      .gallery {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto;
+      }
 
-    .gallery-item {
-      /* overflow: hidden; */
-      position: relative;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      background: white;
-      padding: 1rem;
+      .gallery-item {
+        /* overflow: hidden; */
+        position: relative;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background: white;
+        padding: 1rem;
 
-    }
+      }
 
-    .gallery-item img {
-      display: block;
-      outline: 1px solid black;
+      .gallery-item img {
+        display: block;
+        outline: 1px solid black;
 
-    }
+      }
 
-    .gallery-item img {
-      width: 100%;
-      object-fit: contain;
-      transition: transform 0.4s ease;
-    }
-  </style>
-</head>
+      .gallery-item img {
+        width: 100%;
+        object-fit: contain;
+        transition: transform 0.4s ease;
+      }
+    </style>
+  </head>
 
-<body>
-  <h1>Demo Pet Rescue Organization Site</h1>
-  <div class="gallery">
-    <div class="gallery-item">
-      <h2>Home Page</h2>
-      <img src="localhost_8081_.png" alt="localhost 8081">
+  <body>
+    <h1>Demo Pet Rescue Organization Site</h1>
+    <div class="gallery">
+      <div class="gallery-item">
+        <h2>Home Page</h2>
+        <img src="localhost_8081_.png" alt="localhost 8081">
+      </div>
+      <div class="gallery-item">
+        <h2>Adoption Page</h2>
+        <img src="localhost_8081_pets_.png" alt="localhost 8081 pets">
+
+      </div>
+      <div class="gallery-item">
+        <h2>Supplies Page</h2>
+        <img src="localhost_8081_supplies_.png" alt="localhost 8081 supplies">
+      </div>
+      <div class="gallery-item">
+        <h2>Contact Page</h2>
+        <img src="localhost_8081_contact_.png" alt="localhost 8081 contact">
+
+      </div>
+      <div class="gallery-item">
+        <h2>Individual Pet Page</h2>
+        <img src="localhost_8081_pets_pudge_.png" alt="localhost 8081 pets pudge">
+      </div>
     </div>
-    <div class="gallery-item">
-      <h2>Adoption Page</h2>
-      <img src="localhost_8081_pets_.png" alt="localhost 8081 pets">
 
-    </div>
-    <div class="gallery-item">
-      <h2>Supplies Page</h2>
-      <img src="localhost_8081_supplies_.png" alt="localhost 8081 supplies">
-    </div>
-    <div class="gallery-item">
-      <h2>Contact Page</h2>
-      <img src="localhost_8081_contact_.png" alt="localhost 8081 contact">
-
-    </div>
-    <div class="gallery-item">
-      <h2>Individual Pet Page</h2>
-      <img src="localhost_8081_pets_pudge_.png" alt="localhost 8081 pets pudge">
-    </div>
-  </div>
-
-</body>
+  </body>
 
 </html>
